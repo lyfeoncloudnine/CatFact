@@ -22,6 +22,8 @@
 		B20CEDEF2A0CC8FB00590E3B /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDEE2A0CC8FB00590E3B /* CatFact.swift */; };
 		B20CEDF12A0CC95D00590E3B /* TestAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDF02A0CC95D00590E3B /* TestAPIServiceTests.swift */; };
 		B20CEDF22A0CCB2000590E3B /* fact.json in Resources */ = {isa = PBXBuildFile; fileRef = B20CEDE82A0CC82600590E3B /* fact.json */; };
+		B20CEDF52A0CCB9300590E3B /* CatFactViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDF42A0CCB9300590E3B /* CatFactViewReactor.swift */; };
+		B20CEDF72A0CCE0300590E3B /* CatFactViewReactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDF62A0CCE0300590E3B /* CatFactViewReactorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B20CEDEB2A0CC85700590E3B /* TestAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIService.swift; sourceTree = "<group>"; };
 		B20CEDEE2A0CC8FB00590E3B /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
 		B20CEDF02A0CC95D00590E3B /* TestAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIServiceTests.swift; sourceTree = "<group>"; };
+		B20CEDF42A0CCB9300590E3B /* CatFactViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewReactor.swift; sourceTree = "<group>"; };
+		B20CEDF62A0CCE0300590E3B /* CatFactViewReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewReactorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				B20CEDE72A0CC80600590E3B /* Test */,
 				B20CEDF02A0CC95D00590E3B /* TestAPIServiceTests.swift */,
+				B20CEDF62A0CCE0300590E3B /* CatFactViewReactorTests.swift */,
 			);
 			path = CatFactTests;
 			sourceTree = "<group>";
@@ -123,8 +128,9 @@
 		B20CEDCF2A0CC53500590E3B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B20CEDED2A0CC8F300590E3B /* Model */,
 				B20CEDDB2A0CC63D00590E3B /* Service */,
+				B20CEDF32A0CCB7B00590E3B /* ViewController */,
+				B20CEDED2A0CC8F300590E3B /* Model */,
 				B20CEDD12A0CC56F00590E3B /* Protocol */,
 				B20CEDAC2A0CC27800590E3B /* ViewController.swift */,
 			);
@@ -215,6 +221,14 @@
 				B20CEDEE2A0CC8FB00590E3B /* CatFact.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B20CEDF32A0CCB7B00590E3B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDF42A0CCB9300590E3B /* CatFactViewReactor.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +337,7 @@
 				B20CEDDE2A0CC64A00590E3B /* APIServiceType.swift in Sources */,
 				B20CEDA92A0CC27800590E3B /* AppDelegate.swift in Sources */,
 				B20CEDD82A0CC5F500590E3B /* DistinctValue.swift in Sources */,
+				B20CEDF52A0CCB9300590E3B /* CatFactViewReactor.swift in Sources */,
 				B20CEDD62A0CC5B100590E3B /* ReactorView.swift in Sources */,
 				B20CEDE62A0CC7AA00590E3B /* CatRequest.swift in Sources */,
 				B20CEDE32A0CC6BA00590E3B /* APIService.swift in Sources */,
@@ -336,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20CEDF12A0CC95D00590E3B /* TestAPIServiceTests.swift in Sources */,
+				B20CEDF72A0CCE0300590E3B /* CatFactViewReactorTests.swift in Sources */,
 				B20CEDEC2A0CC85700590E3B /* TestAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
