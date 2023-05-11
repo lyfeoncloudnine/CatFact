@@ -19,10 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     func setRootViewController() {
-        let viewController = ViewController()
+        let catFactViewController = CatFactViewController()
+        catFactViewController.reactor = CatFactViewReactor(apiService: APIService())
         
         let initialWindow = UIWindow(frame: UIScreen.main.bounds)
-        initialWindow.rootViewController = viewController
+        initialWindow.rootViewController = catFactViewController
         initialWindow.makeKeyAndVisible()
         
         window = initialWindow
