@@ -15,6 +15,9 @@
 		B20CEDD42A0CC5A300590E3B /* Reactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD32A0CC5A300590E3B /* Reactor.swift */; };
 		B20CEDD62A0CC5B100590E3B /* ReactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD52A0CC5B100590E3B /* ReactorView.swift */; };
 		B20CEDD82A0CC5F500590E3B /* DistinctValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD72A0CC5F500590E3B /* DistinctValue.swift */; };
+		B20CEDDE2A0CC64A00590E3B /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */; };
+		B20CEDE12A0CC67B00590E3B /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDE02A0CC67B00590E3B /* TargetType.swift */; };
+		B20CEDE32A0CC6BA00590E3B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDE22A0CC6BA00590E3B /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		B20CEDD32A0CC5A300590E3B /* Reactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactor.swift; sourceTree = "<group>"; };
 		B20CEDD52A0CC5B100590E3B /* ReactorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorView.swift; sourceTree = "<group>"; };
 		B20CEDD72A0CC5F500590E3B /* DistinctValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctValue.swift; sourceTree = "<group>"; };
+		B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServiceType.swift; path = ../../../../../../Documents/APIServiceType.swift; sourceTree = "<group>"; };
+		B20CEDE02A0CC67B00590E3B /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		B20CEDE22A0CC6BA00590E3B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		B20CEDCF2A0CC53500590E3B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B20CEDDB2A0CC63D00590E3B /* Service */,
 				B20CEDD12A0CC56F00590E3B /* Protocol */,
 				B20CEDAC2A0CC27800590E3B /* ViewController.swift */,
 			);
@@ -126,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B20CEDD22A0CC57200590E3B /* Reactor */,
+				B20CEDDF2A0CC67300590E3B /* APIService */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -138,6 +146,31 @@
 				B20CEDD72A0CC5F500590E3B /* DistinctValue.swift */,
 			);
 			path = Reactor;
+			sourceTree = "<group>";
+		};
+		B20CEDDB2A0CC63D00590E3B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDDC2A0CC64100590E3B /* APIService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B20CEDDC2A0CC64100590E3B /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */,
+				B20CEDE22A0CC6BA00590E3B /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		B20CEDDF2A0CC67300590E3B /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDE02A0CC67B00590E3B /* TargetType.swift */,
+			);
+			path = APIService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +275,12 @@
 			files = (
 				B20CEDAD2A0CC27800590E3B /* ViewController.swift in Sources */,
 				B20CEDD42A0CC5A300590E3B /* Reactor.swift in Sources */,
+				B20CEDDE2A0CC64A00590E3B /* APIServiceType.swift in Sources */,
 				B20CEDA92A0CC27800590E3B /* AppDelegate.swift in Sources */,
 				B20CEDD82A0CC5F500590E3B /* DistinctValue.swift in Sources */,
 				B20CEDD62A0CC5B100590E3B /* ReactorView.swift in Sources */,
+				B20CEDE32A0CC6BA00590E3B /* APIService.swift in Sources */,
+				B20CEDE12A0CC67B00590E3B /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
