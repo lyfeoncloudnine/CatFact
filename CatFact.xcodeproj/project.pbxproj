@@ -59,6 +59,7 @@
 		B20CEDF62A0CCE0300590E3B /* CatFactViewReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewReactorTests.swift; sourceTree = "<group>"; };
 		B20CEDF92A0CCF7700590E3B /* CatFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactView.swift; sourceTree = "<group>"; };
 		B20CEDFB2A0CD0E100590E3B /* CatFactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactViewController.swift; sourceTree = "<group>"; };
+		B20CEDFD2A0CD78400590E3B /* CatFact.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CatFact.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		B20CED9C2A0CC27800590E3B = {
 			isa = PBXGroup;
 			children = (
+				B20CEDFD2A0CD78400590E3B /* CatFact.xctestplan */,
 				B20CEDA72A0CC27800590E3B /* CatFact */,
 				B20CEDC62A0CC3E300590E3B /* CatFactTests */,
 				B20CEDA62A0CC27800590E3B /* Products */,
