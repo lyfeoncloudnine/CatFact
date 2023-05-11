@@ -74,11 +74,9 @@
 		B20CEDA72A0CC27800590E3B /* CatFact */ = {
 			isa = PBXGroup;
 			children = (
-				B20CEDA82A0CC27800590E3B /* AppDelegate.swift */,
-				B20CEDAC2A0CC27800590E3B /* ViewController.swift */,
-				B20CEDB12A0CC27900590E3B /* Assets.xcassets */,
-				B20CEDB32A0CC27900590E3B /* LaunchScreen.storyboard */,
-				B20CEDB62A0CC27900590E3B /* Info.plist */,
+				B20CEDD02A0CC54700590E3B /* App */,
+				B20CEDCF2A0CC53500590E3B /* Sources */,
+				B20CEDCE2A0CC52F00590E3B /* Resources */,
 			);
 			path = CatFact;
 			sourceTree = "<group>";
@@ -89,6 +87,32 @@
 				B20CEDC72A0CC3E300590E3B /* CatFactTests.swift */,
 			);
 			path = CatFactTests;
+			sourceTree = "<group>";
+		};
+		B20CEDCE2A0CC52F00590E3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDB12A0CC27900590E3B /* Assets.xcassets */,
+				B20CEDB32A0CC27900590E3B /* LaunchScreen.storyboard */,
+				B20CEDB62A0CC27900590E3B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B20CEDCF2A0CC53500590E3B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDAC2A0CC27800590E3B /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B20CEDD02A0CC54700590E3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B20CEDA82A0CC27800590E3B /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatFact/Info.plist;
+				INFOPLIST_FILE = CatFact/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -374,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CatFact/Info.plist;
+				INFOPLIST_FILE = CatFact/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
