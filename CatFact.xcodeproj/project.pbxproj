@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1DB50DB2A1104F6008557C9 /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DB50DA2A1104F6008557C9 /* APIServiceType.swift */; };
 		B20CEDA92A0CC27800590E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDA82A0CC27800590E3B /* AppDelegate.swift */; };
 		B20CEDB22A0CC27900590E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20CEDB12A0CC27900590E3B /* Assets.xcassets */; };
 		B20CEDB52A0CC27900590E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20CEDB32A0CC27900590E3B /* LaunchScreen.storyboard */; };
 		B20CEDD42A0CC5A300590E3B /* Reactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD32A0CC5A300590E3B /* Reactor.swift */; };
 		B20CEDD62A0CC5B100590E3B /* ReactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD52A0CC5B100590E3B /* ReactorView.swift */; };
 		B20CEDD82A0CC5F500590E3B /* DistinctValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDD72A0CC5F500590E3B /* DistinctValue.swift */; };
-		B20CEDDE2A0CC64A00590E3B /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */; };
 		B20CEDE12A0CC67B00590E3B /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDE02A0CC67B00590E3B /* TargetType.swift */; };
 		B20CEDE32A0CC6BA00590E3B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDE22A0CC6BA00590E3B /* APIService.swift */; };
 		B20CEDE62A0CC7AA00590E3B /* CatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CEDE52A0CC7AA00590E3B /* CatRequest.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1DB50DA2A1104F6008557C9 /* APIServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceType.swift; sourceTree = "<group>"; };
 		B20CEDA52A0CC27800590E3B /* CatFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20CEDA82A0CC27800590E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B20CEDB12A0CC27900590E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		B20CEDD32A0CC5A300590E3B /* Reactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactor.swift; sourceTree = "<group>"; };
 		B20CEDD52A0CC5B100590E3B /* ReactorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorView.swift; sourceTree = "<group>"; };
 		B20CEDD72A0CC5F500590E3B /* DistinctValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctValue.swift; sourceTree = "<group>"; };
-		B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServiceType.swift; path = ../../../../../../Documents/APIServiceType.swift; sourceTree = "<group>"; };
 		B20CEDE02A0CC67B00590E3B /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		B20CEDE22A0CC6BA00590E3B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B20CEDE52A0CC7AA00590E3B /* CatRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRequest.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				B20CEDE42A0CC7A200590E3B /* CatRequest */,
-				B20CEDDD2A0CC64A00590E3B /* APIServiceType.swift */,
+				A1DB50DA2A1104F6008557C9 /* APIServiceType.swift */,
 				B20CEDE22A0CC6BA00590E3B /* APIService.swift */,
 			);
 			path = APIService;
@@ -347,7 +347,7 @@
 			files = (
 				B20CEDFA2A0CCF7700590E3B /* CatFactView.swift in Sources */,
 				B20CEDD42A0CC5A300590E3B /* Reactor.swift in Sources */,
-				B20CEDDE2A0CC64A00590E3B /* APIServiceType.swift in Sources */,
+				A1DB50DB2A1104F6008557C9 /* APIServiceType.swift in Sources */,
 				B20CEDA92A0CC27800590E3B /* AppDelegate.swift in Sources */,
 				B20CEDD82A0CC5F500590E3B /* DistinctValue.swift in Sources */,
 				B20CEDF52A0CCB9300590E3B /* CatFactViewReactor.swift in Sources */,
