@@ -19,16 +19,16 @@ protocol ReactorView: AnyObject {
 }
 
 fileprivate enum ReactorViewKey {
-    static var _reatorKey = "reactorKey"
+    static var _reactorKey = "reactorKey"
 }
 
 extension ReactorView {
     var reactor: SomeReactor? {
         get {
-            return (objc_getAssociatedObject(self, &ReactorViewKey._reatorKey) as? SomeReactor)
+            return withUnsafePointer(to: ReactorViewKey._reactorKey) { objc_getAssociatedObject(self, $0) as? SomeReactor }
         }
         set {
-            objc_setAssociatedObject(self, &ReactorViewKey._reatorKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            withUnsafePointer(to: ReactorViewKey._reactorKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
             if let reactor = newValue {
                 reactor.setUp(cancelBag: &cancelBag)
                 bind(reactor: reactor)

@@ -38,46 +38,46 @@ extension Reactor {
     
     private(set) var action: PassthroughSubject<Action, Never> {
         get {
-            if let subject = objc_getAssociatedObject(self, &ReactorKey._actionKey) as? PassthroughSubject<Action, Never> {
+            if let subject = withUnsafePointer(to: ReactorKey._actionKey, { objc_getAssociatedObject(self, $0) as? PassthroughSubject<Action, Never> }) {
                 return subject
             } else {
                 let subject = PassthroughSubject<Action, Never>()
-                objc_setAssociatedObject(self, &ReactorKey._actionKey, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                withUnsafePointer(to: ReactorKey._actionKey) { objc_setAssociatedObject(self, $0, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
                 return subject
             }
         }
         set {
-            objc_setAssociatedObject(self, &ReactorKey._actionKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            withUnsafePointer(to: ReactorKey._actionKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         }
     }
     
     private(set) var mutation: PassthroughSubject<Mutation, Never> {
         get {
-            if let subject = objc_getAssociatedObject(self, &ReactorKey._mutationKey) as? PassthroughSubject<Mutation, Never> {
+            if let subject = withUnsafePointer(to: ReactorKey._mutationKey, { objc_getAssociatedObject(self, $0) as? PassthroughSubject<Mutation, Never> }) {
                 return subject
             } else {
                 let subject = PassthroughSubject<Mutation, Never>()
-                objc_setAssociatedObject(self, &ReactorKey._mutationKey, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                withUnsafePointer(to: ReactorKey._mutationKey) { objc_setAssociatedObject(self, $0, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
                 return subject
             }
         }
         set {
-            objc_setAssociatedObject(self, &ReactorKey._mutationKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            withUnsafePointer(to: ReactorKey._mutationKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         }
     }
     
     private(set) var state: CurrentValueSubject<State, Never> {
         get {
-            if let subject = objc_getAssociatedObject(self, &ReactorKey._stateKey) as? CurrentValueSubject<State, Never> {
+            if let subject = withUnsafePointer(to: ReactorKey._stateKey, { objc_getAssociatedObject(self, $0) as? CurrentValueSubject<State, Never> }) {
                 return subject
             } else {
                 let subject = CurrentValueSubject<State, Never>(initialState)
-                objc_setAssociatedObject(self, &ReactorKey._stateKey, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                withUnsafePointer(to: ReactorKey._stateKey) { objc_setAssociatedObject(self, $0, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
                 return subject
             }
         }
         set {
-            objc_setAssociatedObject(self, &ReactorKey._stateKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            withUnsafePointer(to: ReactorKey._stateKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
         }
     }
     
