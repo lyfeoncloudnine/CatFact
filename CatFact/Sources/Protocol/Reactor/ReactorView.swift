@@ -25,10 +25,10 @@ fileprivate enum ReactorViewKey {
 extension ReactorView {
     var reactor: SomeReactor? {
         get {
-            return withUnsafePointer(to: ReactorViewKey._reactorKey) { objc_getAssociatedObject(self, $0) as? SomeReactor }
+            return withUnsafePointer(to: &ReactorViewKey._reactorKey) { objc_getAssociatedObject(self, $0) as? SomeReactor }
         }
         set {
-            withUnsafePointer(to: ReactorViewKey._reactorKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+            withUnsafePointer(to: &ReactorViewKey._reactorKey) { objc_setAssociatedObject(self, $0, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
             if let reactor = newValue {
                 reactor.setUp(cancelBag: &cancelBag)
                 bind(reactor: reactor)
